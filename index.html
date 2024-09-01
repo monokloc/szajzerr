@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkWeb Market</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SantoriRPG Market</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link" data-target="home">Strona Główna</a></li>
+                    <li><a href="#narkotyki" class="nav-link" data-target="narkotyki">Narkotyki</a></li>
+                    <li><a href="#broń" class="nav-link" data-target="broń">Broń</a></li>
+                    <li><a href="#kontakt" class="nav-link" data-target="kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section id="home" class="section active">
+                <h2>Witaj na DarkWeb Market</h2>
+                <p>Oferujemy szeroki wybór produktów. Wszystkie produkty są oferowane w anonimowy sposób i są dostępne w różnych cenach.</p>
+            </section>
+
+            <section id="narkotyki" class="section">
+                <h2>Narkotyki</h2>
+
+                <div class="product">
+                    <h3>MDMA</h3>
+                    <p>Znana również jako ecstasy. Popularna w klubach i na imprezach, zapewniająca intensywne uczucie szczęścia.</p>
+                    <p><strong>Cena:</strong> $12,000 za gram</p>
+                    <img src="{{ url_for('static', filename='mdma.jpg') }}" alt="MDMA">
+                </div>
+
+                <div class="product">
+                    <h3>Kokaina</h3>
+                    <p>Silny stymulant, dostępny w postaci proszku lub kryształów. Używana w celu uzyskania euforii i zwiększenia energii.</p>
+                    <p><strong>Cena:</strong> $5,500 za gram</p>
+                    <img src="{{ url_for('static', filename='kokina.jpg') }}" alt="Kokaina">
+                </div>
+
+                <div class="product">
+                    <h3>Mefedron</h3>
+                    <p>Stymulant o działaniu zbliżonym do amfetaminy, często używany w klubach. Działa pobudzająco i euforycznie.</p>
+                    <p><strong>Cena:</strong> $9,000 za gram</p>
+                    <img src="{{ url_for('static', filename='mefka.jpg') }}" alt="Mefedron">
+                </div>
+
+                <div class="product">
+                    <h3>LSD</h3>
+                    <p>Halucynogen, który wywołuje intensywne zmiany w percepcji i świadomości. Często używane w celach rekreacyjnych.</p>
+                    <p><strong>Cena:</strong> $7,000 za gram</p>
+                    <img src="{{ url_for('static', filename='lsd.jpg') }}" alt="LSD">
+                </div>
+
+                <div class="product">
+                    <h3>Zioło Sativa</h3>
+                    <p>Rodzaj marihuany o działaniu pobudzającym i energetyzującym. Idealne do użytku dziennego.</p>
+                    <p><strong>Cena:</strong> $4,000 za gram</p>
+                    <img src="{{ url_for('static', filename='sativa.jpg') }}" alt="Zioło Sativa">
+                </div>
+
+                <div class="product">
+                    <h3>Zioło Indica</h3>
+                    <p>Rodzaj marihuany o działaniu relaksującym i uspokajającym. Doskonałe na wieczorne chwile relaksu.</p>
+                    <p><strong>Cena:</strong> $4,000 za gram</p>
+                    <img src="{{ url_for('static', filename='indica.jpg') }}" alt="Zioło Indica">
+                </div>
+
+                <div class="product">
+                    <h3>Amfetamina</h3>
+                    <p>Silny stymulant, który zwiększa poziom energii i poprawia koncentrację. Może prowadzić do euforii.</p>
+                    <p><strong>Cena:</strong> $5,000 za gram</p>
+                    <img src="{{ url_for('static', filename='amfa.jpg') }}" alt="Amfetamina">
+                </div>
+
+                <div class="product">
+                    <h3>Adrenalina w Strzykawkach</h3>
+                    <p>Silny stymulant używany w medycynie, który może również prowadzić do uczucia intensywnej energii i pobudzenia.</p>
+                    <p><strong>Cena:</strong> $100,000 za strzykawkę</p>
+                    <img src="{{ url_for('static', filename='adrena.jpg') }}" alt="Adrenalina">
+                </div>
+
+                <div class="product">
+                    <h3>Morfiny</h3>
+                    <p>Opioid stosowany w medycynie przeciwbólowej, który ma również działanie euforyczne.</p>
+                    <p><strong>Cena:</strong> $250,000 za gram</p>
+                    <img src="{{ url_for('static', filename='morfina.jpg') }}" alt="Morfiny">
+                </div>
+            </section>
+
+            <section id="broń" class="section">
+                <h2>Broń</h2>
+                
+                <div class="product">
+                    <h3>Combat</h3>
+                    <p>Potężna broń o dużym kalibrze, idealna do walki w krótkim zasięgu.</p>
+                    <p><strong>Cena:</strong> $3,200,000</p>
+                    <img src="{{ url_for('static', filename='shotgun.jpg') }}" alt="Shotgun">
+                </div>
+
+                <div class="product">
+                    <h3>M4</h3>
+                    <p>Wszechstronna broń automatyczna, używana zarówno w militarnych, jak i cywilnych zastosowaniach.</p>
+                    <p><strong>Cena:</strong> $4,800,000</p>
+                    <img src="{{ url_for('static', filename='m4.jpg') }}" alt="M4">
+                </div>
+
+                <div class="product">
+                    <h3>AK-47</h3>
+                    <p>Znana na całym świecie karabinek automatyczny, bardzo skuteczny w różnych warunkach.</p>
+                    <p><strong>Cena:</strong> $4,500,000</p>
+                    <img src="{{ url_for('static', filename='ak47.jpg') }}" alt="AK-47">
+                </div>
+
+                <div class="product">
+                    <h3>Deagle</h3>
+                    <p>Kompaktowa broń palna, łatwa do ukrycia i używania w różnych sytuacjach.</p>
+                    <p><strong>Cena:</strong> $2,100,000</p>
+                    <img src="{{ url_for('static', filename='pistol.jpg') }}" alt="Deagle">
+                </div>
+
+                <!-- Nowe pozycje -->
+                <div class="product">
+                    <h3>Uzi</h3>
+                    <p>Mała, ale bardzo efektywna broń automatyczna, idealna do walki w bliskim zasięgu. Cieszy się dużą popularnością wśród służb ochrony i grup przestępczych.</p>
+                    <p><strong>Cena:</strong> $2,700,000</p>
+                    <img src="{{ url_for('static', filename='uzi.jpg') }}" alt="Uzi">
+                </div>
+
+                <div class="product">
+                    <h3>Tec-9</h3>
+                    <p>Kompaktowy pistolet automatyczny o dużym kalibrze, łatwy do ukrycia. Znany ze swojej skuteczności w sytuacjach wymagających szybkiego działania.</p>
+                    <p><strong>Cena:</strong> $2,400,000</p>
+                    <img src="{{ url_for('static', filename='tec9.jpg') }}" alt="Tec-9">
+                </div>
+
+                <!-- Dodane pozycje -->
+                <div class="product">
+                    <h3>Snajperka</h3>
+                    <p>Broń o dużym zasięgu i celności, idealna do precyzyjnych strzałów z daleka. Wymaga dużych umiejętności i cierpliwości.</p>
+                    <p><strong>Cena:</strong> $5,100,000</p>
+                    <img src="{{ url_for('static', filename='snajperka.jpg') }}" alt="Snajperka">
+                </div>
+
+                <div class="product">
+                    <h3>MP5</h3>
+                    <p>Mały, ale efektywny pistolet maszynowy o dużym magazynku. Idealny do walki w bliskim i średnim zasięgu.</p>
+                    <p><strong>Cena:</strong> $3,300,000</p>
+                    <img src="{{ url_for('static', filename='mp5.jpg') }}" alt="MP5">
+                </div>
+
+            </section>
+
+            <section id="kontakt" class="section">
+                <h2>Kontakt</h2>
+                <p>Jeśli masz pytania lub chcesz złożyć zamówienie, prosimy o kontakt poprzez szyfrowaną aplikacje
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SantoriRPG</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('main .section');
+
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('data-target');
+                    
+                    sections.forEach(section => {
+                        if (section.id === targetId) {
+                            section.classList.add('active');
+                        } else {
+                            section.classList.remove('active');
+                        }
+                    });
+                });
+            });
+
+            // Show the home section by default
+            document.querySelector('#home').classList.add('active');
+        });
+    </script>
+</body>
+</html>
